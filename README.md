@@ -1,5 +1,5 @@
 # BMA-GCCNs
 Bioinfomatic motif-matching based Subgraph-level Attentional Convolutional Network for Graph Classifification
-------------------------------------------------------------------------------------------------------------------_
+-----------------------------------------------------------------------------------------------------------------------------------------
 Graph classification is critically important to many real-world applications that are associated with graph data such as chemical drug analysis and social network mining. We have managed to apply our MA-GCCNS algorithms to some popular datasets and achieve state-of-art performance. Some more experiments will be completed. If you are interested to explore graph mining and want to know more related datasets, please refer to this link:https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets. I am intending to add some visualization modules to help detect susceptible submolecular models in virus RNA and determine community topics in social network.
  If you are willing to work with me in graph mining or seek for related reading metarials, feel free to contact me via hebowei200010@gmail.com.
