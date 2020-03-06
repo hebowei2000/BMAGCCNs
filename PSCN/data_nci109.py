@@ -37,5 +37,11 @@ for i in range (len(label)):
     # for j in range(len(edge)):
     #    g.edge_index(j).weight = edge[j][2]
     #print(g)
+      file_name = "nci109_"+str(i)
+      g.save("NCI109/"+file_name+".xml.gz")
+      f_text.write(file_name + ".xml.gz" + " " +str(label[i].item(0)) + '\n')
 
+    print(g)
+    #f_text.close()
+    _
 
