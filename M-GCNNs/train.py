@@ -117,8 +117,4 @@ if __name__ == "__main__":
         print('Mean: {:.2f}'.format(mean))
         print('Std: {:.2f}'.format(std))
 
-
-
-
-
-
+   

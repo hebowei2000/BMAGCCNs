@@ -87,7 +87,8 @@ class MGCNNs(object):
             dropout2 = tf.layers.dropout(
                 inputs=conv2, rate=self.dropout_ratio)
 
-        # (batch_size, feature_len, seq_len, filters)
+        # add three fully-connected layers
+            # (batch_size, feature_len, seq_len, filters)
         with tf.variable_scope('fc_n'):
             flat = tf.reshape(dropout2, [-1, dropout2.shape[1]*dropout2.shape[2]*dropout2.shape[3]])
             dense1 = tf.layers.dense(inputs=flat, units=self.fc1_output_size, activation=tf.nn.relu)
