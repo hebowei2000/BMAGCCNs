@@ -98,3 +98,10 @@ tight_layout()
 savefig("price-dge-dist.pdf")
 savefig("price-dge-dist.svg")
 
+#draw the graph to see some other features of its topology
+g = load_graph("price.xml.gz")
+age = g.vertex_properties["age"]
+
+pos = sfdp_layout(g)
+graph_draw(g,pos,out_size=(1000,1000),vertex_color=[1,1,1,0],vertex_fill_color=age,vertex_size=1,edge_pen_width=1.2,vcmap=matplotlib.cm.gist_heat_r, output="price.png")
+
